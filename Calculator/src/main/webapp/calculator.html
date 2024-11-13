@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Calculator</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+
+.calculator {
+	background: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator input {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	box-sizing: border-box;
+}
+
+.calculator button {
+	width: 23%;
+	padding: 10px;
+	margin: 5px 1%;
+	box-sizing: border-box;
+	background: #007BFF;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.calculator button:hover {
+	background: #0056b3;
+}
+</style>
+</head>
+<body>
+
+	<div class="calculator">
+		<form action="CalculatorServlet" method="post">
+			<input type="number" name="num1" placeholder="Enter first number">
+			<input type="number" name="num2" placeholder="Enter second number">
+			<!-- <input type="text" name="result" value="${result}"
+				placeholder="Result" readonly> -->
+			<div>
+				<button type="submit" name="operation" value="add">Add</button>
+				<button type="submit" name="operation" value="sub">Sub</button>
+				<button type="submit" name="operation" value="mul">Mul</button>
+				<button type="submit" name="operation" value="div">Div</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
