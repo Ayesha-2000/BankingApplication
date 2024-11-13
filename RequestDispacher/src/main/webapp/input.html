@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple operation</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+
+.input {
+	background: yellow;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input input {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	box-sizing: border-box;
+	
+}
+
+.input button {
+	width: 23%;
+	padding: 10px;
+	margin: 5px 1%;
+	box-sizing: border-box;
+	background: #008000;
+	color:white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.input button:hover {
+	background: #b33b72;
+}
+</style>
+</head>
+<body>
+
+	<div class="input">
+		<form action="RDispacher" method="post">
+			<input type="number" name="num" placeholder="Enter number">
+			
+			<!-- <input type="text" name="result" value="${result}"
+				placeholder="Result" readonly> -->
+			<div>
+				<button type="submit" name="operation" value="prime">prime</button>
+				<button type="submit" name="operation" value="factor">factor</button>
+				<button type="submit" name="operation" value="factorial">factorial</button>
+				<button type="submit" name="operation" value="square">square</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
